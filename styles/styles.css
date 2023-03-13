@@ -16,7 +16,7 @@
   --max-width : 1200px;
 
   /*  Colores  */
-  --primary-color     : #235d9b;
+  --primary-color     : #18487a;
   --primary-color-alt : #062749;
   --title-color       : #121F26;
   --text-color        : #676F73;
@@ -268,6 +268,16 @@ h4 {
 
 }
 
+.main-header .jam {
+  margin-left : auto;
+}
+
+.main-header .jam {
+  color     : var(--title-color);
+  font-size : 2.5rem;
+  cursor    : pointer;
+}
+
 .main-header .icon {
   color     : var(--title-color);
   font-size : 2.5rem;
@@ -277,6 +287,10 @@ h4 {
 @media screen and (min-width: 1024px) {
 
   .main-header .icon {
+    display : none;
+  }
+
+  .main-header .jam {
     display : none;
   }
 
@@ -339,6 +353,12 @@ h4 {
   top      : 0.5rem;
 }
 
+.main-menu .jam-close {
+  position : absolute;
+  right    : 1rem;
+  top      : 0.5rem;
+}
+
 .main-menu a {
   display         : block;
   padding         : 0.75rem 1rem;
@@ -380,7 +400,7 @@ h4 {
   left       : 0;
   top        : 0;
   width      : 100%;
-  height     : 86%;
+  height     : 92%;
   object-fit : cover;
   z-index    : var(--z-normal);
   opacity    : 0.09;
@@ -491,6 +511,12 @@ h4 {
   margin-bottom : 1rem;
   color         : var(--primary-color);
   font-size     : 6rem;
+}
+
+.service-item .jam {
+  margin-bottom : 1rem;
+  color         : var(--primary-color);
+  font-size     : 4rem;
 }
 
 .service-item h3 {
@@ -738,6 +764,10 @@ h4 {
   margin-right : 0.25rem;
 }
 
+.card-project .jam {
+  font-size : var(--big-font-size);
+}
+
 .card-project .icon {
   font-size : var(--big-font-size);
 }
@@ -844,6 +874,10 @@ h4 {
   font-size : 2rem;
 }
 
+.contact-item .jam {
+  font-size : 1rem;
+}
+
 .map-ubication {
   width         : 100%;
   height        : 200px;
@@ -886,6 +920,8 @@ input[type="text"], input[type="email"], textarea {
 .map-container {
   position: relative;
   text-align: center;
+  margin-top: 35em;
+  margin-bottom: 3rem;
 }
 
 .title-map{
@@ -913,8 +949,8 @@ input[type="text"], input[type="email"], textarea {
   flex: 0 0 auto;
   margin: 20px;
   align-items: center;
-  margin-left: 6rem;
   margin-top: 3rem;
+  text-align: center;
 }
 
 .imagen {
@@ -925,7 +961,28 @@ input[type="text"], input[type="email"], textarea {
   position: -ms-page;
   right: 0;
   top: -100px;
+  height: auto;
 }
+
+@media (max-width: 1023px) {
+  .contenedor-imagen {
+    display: block;
+    text-align: center;
+  }
+
+  .imagen {
+    max-width: 100%;
+    height: auto;
+    font-size: xx-small;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
 
 /*QRs*/
 
@@ -934,6 +991,7 @@ input[type="text"], input[type="email"], textarea {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .section-container h2 {
